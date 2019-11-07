@@ -1,0 +1,8 @@
+[data-theme='dark'] {
+  --wp-ui--color-primary: #007cba;
+  --wp-ui--color-heading: #eee;
+  --wp-ui--color-text: #ddd;
+  --wp-ui--color-background-ui: #282c2f;
+  --wp-ui--color-background-app: #111;
+  --wp-ui--color-border: #999;
+}

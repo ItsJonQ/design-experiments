@@ -1,0 +1,4 @@
+html body.wp-admin {
+  background: var(--wp-ui--color-background-app);
+  color: var(--wp-ui--color-text);
+}

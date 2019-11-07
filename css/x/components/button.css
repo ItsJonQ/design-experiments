@@ -1,0 +1,135 @@
+:root {
+  --wp-ui--button-background: #f3f5f6;
+  --wp-ui--button-color: var(--wp-ui--color-primary);
+  --wp-ui--button-border-color: var(--wp-ui--color-primary);
+  --wp-ui--button-border-radius: 3px;
+  --wp-ui--button-font-size: 13px;
+  --wp-ui--button-font-weight: normal;
+  --wp-ui--button-min-height: var(--wp-ui--field-min-height);
+  --wp-ui--button-hover-background: #f1f1f1;
+  --wp-ui--button-hover-border-color: #016087;
+  --wp-ui--button-hover-color: #016087;
+  --wp-ui--button-active-background: var(--wp-ui--button-background);
+  --wp-ui--button-active-border-color: var(--wp-ui--color-primary);
+  --wp-ui--button-active-box-shadow: none;
+  --wp-ui--button-focus-background: var(--wp-ui--button-background);
+  --wp-ui--button-focus-border-color: var(--wp-ui--color-primary);
+  --wp-ui--button-focus-color: var(--wp-ui--color-primary);
+  --wp-ui--button-focus-box-shadow: 0 0 0 1px var(--wp-ui--color-primary);
+  --wp-ui--button-focus-outline: 2px solid transparent;
+  --wp-ui--button-focus-outline-offset: 0;
+  --wp-ui--button-primary-background: var(--wp-ui--color-primary);
+  --wp-ui--button-primary-border-color: var(--wp-ui--color-primary);
+  --wp-ui--button-primary-color: white;
+  --wp-ui--button-primary-text-decoration: none;
+  --wp-ui--button-primary-text-shadow: none;
+  --wp-ui--button-primary-hover-background: #0071a1;
+  --wp-ui--button-primary-hover-border-color: #0071a1;
+  --wp-ui--button-primary-hover-box-shadow: none;
+  --wp-ui--button-primary-hover-color: white;
+  --wp-ui--button-primary-active-background: #00669b;
+  --wp-ui--button-primary-active-border-color: #00669b;
+  --wp-ui--button-primary-active-box-shadow: none;
+  --wp-ui--button-primary-focus-box-shadow: 0 0 0 1px white,
+		0 0 0 3px var(--wp-ui--color-primary);
+  --wp-ui--button-link-color: var(--wp-ui--color-primary);
+  --wp-ui--button-link-hover-color: var(--wp-ui--color-primary-light);
+  --wp-ui--button-link-active-color: var(--wp-ui--color-primary-light);
+  --wp-ui--button-link-focus-color: var(--wp-ui--color-primary);
+}
+
+:root[data-theme='dark'] {
+  --wp-ui--button-background: var(--wp-ui--color-background-ui);
+  --wp-ui--button-hover-background: #383c3f;
+}
+
+.button,
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+  background: var(--wp-ui--button-background);
+  color: var(--wp-ui--button-color);
+  border-color: var(--wp-ui--button-border-color);
+  border-radius: var(--wp-ui--button-border-radius);
+  font-size: var(--wp-ui--button-font-size);
+  font-weight: var(--wp-ui--button-font-weight);
+  min-height: var(--wp-ui--button-min-height);
+}
+
+.button:hover,
+.wrap .add-new-h2:hover,
+.wrap .add-new-h2:active:hover,
+.wrap .page-title-action:hover,
+.wrap .page-title-action:active:hover {
+  background: var(--wp-ui--button-hover-background);
+  border-color: var(--wp-ui--button-hover-border-color);
+  color: var(--wp-ui--button-hover-color);
+}
+
+.button:active,
+.wrap .add-new-h2:active,
+.wrap .add-new-h2:active:active,
+.wrap .page-title-action:active,
+.wrap .page-title-action:active:active {
+  background: var(--wp-ui--button-active-background);
+  border-color: var(--wp-ui--button-active-border-color);
+  box-shadow: var(--wp-ui--button-active-box-shadow);
+}
+
+.button.button-primary,
+.wrap .add-new-h2.button-primary,
+.wrap .add-new-h2:active.button-primary,
+.wrap .page-title-action.button-primary,
+.wrap .page-title-action:active.button-primary {
+  background: var(--wp-ui--button-primary-background);
+  border-color: var(--wp-ui--button-primary-border-color);
+  color: var(--wp-ui--button-primary-color);
+  text-decoration: var(--wp-ui--button-primary-text-decoration);
+  text-shadow: var(--wp-ui--button-primary-text-shadow);
+}
+
+.button.button-primary:hover,
+.wrap .add-new-h2.button-primary:hover,
+.wrap .add-new-h2:active.button-primary:hover,
+.wrap .page-title-action.button-primary:hover,
+.wrap .page-title-action:active.button-primary:hover {
+  background: var(--wp-ui--button-primary-hover-background);
+  border-color: var(--wp-ui--button-primary-hover-border-color);
+  box-shadow: var(--wp-ui--button-primary-hover-box-shadow);
+  color: var(--wp-ui--button-primary-hover-color);
+}
+
+.button.button-primary:active,
+.wrap .add-new-h2.button-primary:active,
+.wrap .add-new-h2:active.button-primary:active,
+.wrap .page-title-action.button-primary:active,
+.wrap .page-title-action:active.button-primary:active {
+  background: var(--wp-ui--button-primary-active-background);
+  border-color: var(--wp-ui--button-primary-active-border-color);
+  box-shadow: var(--wp-ui--button-primary-active-box-shadow);
+}
+
+.button.button-primary:focus,
+.wrap .add-new-h2.button-primary:focus,
+.wrap .add-new-h2:active.button-primary:focus,
+.wrap .page-title-action.button-primary:focus,
+.wrap .page-title-action:active.button-primary:focus {
+  box-shadow: var(--wp-ui--button-primary-focus-box-shadow);
+}
+
+.button-link {
+  color: var(--wp-ui--button-link-color);
+}
+
+.button-link:hover {
+  color: var(--wp-ui--button-link-hover-color);
+}
+
+.button-link:active {
+  color: var(--wp-ui--button-link-active-color);
+}
+
+.button-link:focus {
+  color: var(--wp-ui--button-link-focus-color);
+}

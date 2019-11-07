@@ -1,0 +1,23 @@
+:root {
+  --wp-ui--color-primary: #007cba;
+  --wp-ui--color-text: #32373c;
+  --wp-ui--color-border: #7e8993;
+  --wp-ui--color-background-ui: white;
+  --wp-ui--button-font-size: 13px;
+  --wp-ui--button-min-height: var(--wp-ui--field-min-height);
+  --wp-ui--field-background-color: var(--wp-ui--color-background-ui);
+  --wp-ui--field-box-shadow: 0 0 0 transparent;
+  --wp-ui--field-border-radius: 4px;
+  --wp-ui--field-border-color: var(--wp-ui--color-border);
+  --wp-ui--field-border: 1px solid var(--wp-ui--field-border-color);
+  --wp-ui--field-color: var(--wp-ui--color-text);
+  --wp-ui--field-font-size: 14px;
+  --wp-ui--field-padding: 0 8px;
+  --wp-ui--field-min-height: 30px;
+  --wp-ui--field-focus-border-color: var(--wp-ui--color-primary);
+  --wp-ui--field-focus-box-shadow: 0 0 0 1px var(--wp-ui--color-primary);
+  --wp-ui--field-focus-outline: 2px solid transparent;
+  --wp-ui--select-font-size: var(--wp-ui--button-font-size);
+  --wp-ui--select-min-height: var(--wp-ui--field-min-height);
+  --wp-ui--select-padding: 3px 24px 3px 8px;
+}

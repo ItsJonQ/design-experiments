@@ -1,0 +1,7 @@
+a {
+  color: var(--wp-ui--color-primary);
+}
+
+a:hover, a:active {
+  color: var(--wp-ui--color-primary-light);
+}

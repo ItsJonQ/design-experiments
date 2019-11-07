@@ -1,0 +1,21 @@
+:root {
+  --wp-ui--color-primary: #007cba;
+  --wp-ui--color-primary-light: #00a0d2;
+  --wp-ui--color-heading: #23282d;
+  --wp-ui--color-text: #32373c;
+  --wp-ui--color-text-muted: #555d66;
+  --wp-ui--color-background-app: #f1f1f1;
+  --wp-ui--color-background-panel: white;
+  --wp-ui--color-background-ui: white;
+  --wp-ui--color-border: #7e8993;
+}
+
+:root[data-theme='dark'] {
+  --wp-ui--color-heading: #eee;
+  --wp-ui--color-text: #ddd;
+  --wp-ui--color-text-muted: #aaa;
+  --wp-ui--color-background-ui: #242526;
+  --wp-ui--color-background-panel: #161616;
+  --wp-ui--color-background-app: #111;
+  --wp-ui--color-border: #777;
+}

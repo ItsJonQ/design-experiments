@@ -1,6 +1,7 @@
-@import './variables/__index.scss';
+@import './variables/__index';
+@import './root';
 
 html body.wp-admin {
-	@import './base/__index.scss';
-	@import './components/__index.scss';
+	@import './base/__index';
+	@import './components/__index';
 }

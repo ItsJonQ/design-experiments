@@ -1,6 +1,6 @@
 @import '../mixins/dark-mode';
 
-& {
+:root {
 	// COLORS
 	--wp-ui--color-primary: #007cba;
 	--wp-ui--color-primary-light: #00a0d2;
