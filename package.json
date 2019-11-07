@@ -1,0 +1,12 @@
+{
+  "name": "design-experiments",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "watch": "node-sass --watch sass -o css --output-style expanded",
+    "build": "node-sass sass -o css --output-style expanded"
+  }
+}

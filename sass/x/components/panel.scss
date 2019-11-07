@@ -1,0 +1,11 @@
+@at-root :root {
+	--wp-ui--panel-border: 1px solid #ccd0d4;
+	--wp-ui--panel-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	--wp-ui--panel-background: #fff;
+}
+
+.welcome-panel {
+	background: var(--wp-ui-panel-background);
+	border: var(--wp-ui-panel-border);
+	box-shadow: var(--wp-ui-panel-box-shadow);
+}

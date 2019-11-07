@@ -1,0 +1,17 @@
+@at-root :root {
+	// SELECTS
+	--wp-ui--select-font-size: var(--wp-ui--button-font-size);
+	--wp-ui--select-min-height: var(--wp-ui--field-min-height);
+	--wp-ui--select-padding: 3px 24px 3px 8px;
+	--wp-ui--select-hover-color: var(--wp-ui--color-primary);
+}
+
+select {
+	font-size: var(--wp-ui--select-font-size);
+	min-height: var(--wp-ui--select-min-height);
+	padding: var(--wp-ui--select-padding);
+
+	&:hover {
+		color: var(--wp-ui--select-hover-color);
+	}
+}

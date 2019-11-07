@@ -1,0 +1,34 @@
+@import '../mixins/dark-mode';
+
+& {
+	// COLORS
+	--wp-ui--color-primary: #007cba;
+	--wp-ui--color-branding: var(--wp-ui--color-primary);
+
+	// TEXT
+	--wp-ui--color-heading: #23282d;
+	--wp-ui--color-text: #32373c;
+
+	// BACKGROUND
+	--wp-ui--color-background-app: #f1f1f1;
+	--wp-ui--color-background-ui: white;
+
+	// BORDER
+	--wp-ui--color-border: #7e8993;
+
+	@include x-dark-mode {
+		// COLORS
+		--wp-ui--color-primary: #007cba;
+
+		// TEXT
+		--wp-ui--color-heading: #eee;
+		--wp-ui--color-text: #ddd;
+
+		// BACKGROUND
+		--wp-ui--color-background-ui: #282c2f;
+		--wp-ui--color-background-app: #111;
+
+		// BORDER
+		--wp-ui--color-border: #999;
+	}
+}

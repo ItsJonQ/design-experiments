@@ -1,0 +1,5 @@
+@mixin x-dark-mode() {
+	@at-root :root[data-theme='dark'] {
+		@content;
+	}
+}

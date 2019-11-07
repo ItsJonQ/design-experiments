@@ -1,0 +1,6 @@
+@import './variables/__index.scss';
+
+html body.wp-admin {
+	@import './base/__index.scss';
+	@import './components/__index.scss';
+}
