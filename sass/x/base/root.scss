@@ -1,3 +1,13 @@
 & {
 	background: var(--wp-ui--color-background-app);
+	color: var(--wp-ui--color-text);
+}
+
+a {
+	color: var(--wp-ui--color-primary);
+
+	&:hover,
+	&:active {
+		color: var(--wp-ui--color-primary-light);
+	}
 }

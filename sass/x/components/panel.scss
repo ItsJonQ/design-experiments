@@ -1,11 +1,49 @@
+@import '../mixins/dark-mode';
+
 @at-root :root {
-	--wp-ui--panel-border: 1px solid #ccd0d4;
+	--wp-ui--panel-border-color: #ccd0d4;
+	--wp-ui--panel-border: 1px solid var(--wp-ui--panel-border-color);
 	--wp-ui--panel-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-	--wp-ui--panel-background: #fff;
+	--wp-ui--panel-background: var(--wp-ui--color-background-panel);
+
+	@include x-dark-mode {
+		--wp-ui--panel-border-color: #444;
+	}
 }
 
+.postbox,
 .welcome-panel {
-	background: var(--wp-ui-panel-background);
-	border: var(--wp-ui-panel-border);
-	box-shadow: var(--wp-ui-panel-box-shadow);
+	background: var(--wp-ui--panel-background);
+	border: var(--wp-ui--panel-border);
+	box-shadow: var(--wp-ui--panel-box-shadow);
+}
+
+#screen-meta,
+#activity-widget #the-comment-list .comment-item,
+.community-events li {
+	background: var(--wp-ui--panel-background);
+	color: var(--wp-ui--color-text);
+}
+
+#dashboard_activity .subsubsub,
+.community-events li:first-child,
+.community-events li ~ li {
+	border-top: var(--wp-ui--panel-border);
+}
+
+.postbox .hndle,
+.stuffbox .hndle {
+	border-bottom: var(--wp-ui--panel-border);
+}
+
+.activity-block {
+	border-bottom: var(--wp-ui--panel-border);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.community-events-footer {
+	border-top: var(--wp-ui--panel-border);
 }

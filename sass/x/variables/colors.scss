@@ -3,32 +3,33 @@
 & {
 	// COLORS
 	--wp-ui--color-primary: #007cba;
-	--wp-ui--color-branding: var(--wp-ui--color-primary);
+	--wp-ui--color-primary-light: #00a0d2;
 
 	// TEXT
 	--wp-ui--color-heading: #23282d;
 	--wp-ui--color-text: #32373c;
+	--wp-ui--color-text-muted: #555d66;
 
 	// BACKGROUND
 	--wp-ui--color-background-app: #f1f1f1;
+	--wp-ui--color-background-panel: white;
 	--wp-ui--color-background-ui: white;
 
 	// BORDER
 	--wp-ui--color-border: #7e8993;
 
 	@include x-dark-mode {
-		// COLORS
-		--wp-ui--color-primary: #007cba;
-
 		// TEXT
 		--wp-ui--color-heading: #eee;
 		--wp-ui--color-text: #ddd;
+		--wp-ui--color-text-muted: #aaa;
 
 		// BACKGROUND
-		--wp-ui--color-background-ui: #282c2f;
+		--wp-ui--color-background-ui: #242526;
+		--wp-ui--color-background-panel: #161616;
 		--wp-ui--color-background-app: #111;
 
 		// BORDER
-		--wp-ui--color-border: #999;
+		--wp-ui--color-border: #777;
 	}
 }

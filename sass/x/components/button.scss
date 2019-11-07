@@ -44,6 +44,15 @@
 	--wp-ui--button-primary-focus-box-shadow: 0 0 0 1px white,
 		0 0 0 3px var(--wp-ui--color-primary);
 
+	// BUTTON :: LINK
+	--wp-ui--button-link-color: var(--wp-ui--color-primary);
+	// BUTTON :: LINK :: STATE/HOVER
+	--wp-ui--button-link-hover-color: var(--wp-ui--color-primary-light);
+	// BUTTON :: LINK :: STATE/ACTIVE
+	--wp-ui--button-link-active-color: var(--wp-ui--color-primary-light);
+	// BUTTON :: LINK :: STATE/FOCUS
+	--wp-ui--button-link-focus-color: var(--wp-ui--color-primary);
+
 	@include x-dark-mode {
 		--wp-ui--button-background: var(--wp-ui--color-background-ui);
 		--wp-ui--button-hover-background: #383c3f;
@@ -98,5 +107,19 @@
 		&:focus {
 			box-shadow: var(--wp-ui--button-primary-focus-box-shadow);
 		}
+	}
+}
+
+.button-link {
+	color: var(--wp-ui--button-link-color);
+
+	&:hover {
+		color: var(--wp-ui--button-link-hover-color);
+	}
+	&:active {
+		color: var(--wp-ui--button-link-active-color);
+	}
+	&:focus {
+		color: var(--wp-ui--button-link-focus-color);
 	}
 }
