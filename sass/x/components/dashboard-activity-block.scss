@@ -1,0 +1,29 @@
+#screen-meta,
+#activity-widget #the-comment-list .comment-item,
+.community-events li {
+	background: var(--wp-ui--panel-background);
+	color: var(--wp-ui--color-text);
+}
+
+#dashboard_activity .subsubsub,
+.community-events li:first-child,
+.community-events li ~ li {
+	border-top: var(--wp-ui--panel-border);
+}
+
+.postbox .hndle,
+.stuffbox .hndle {
+	border-bottom: var(--wp-ui--panel-border);
+}
+
+.activity-block {
+	border-bottom: var(--wp-ui--panel-border);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.community-events-footer {
+	border-top: var(--wp-ui--panel-border);
+}

@@ -7,8 +7,8 @@
   --wp-ui--button-font-weight: normal;
   --wp-ui--button-min-height: var(--wp-ui--field-min-height);
   --wp-ui--button-hover-background: #f1f1f1;
-  --wp-ui--button-hover-border-color: #016087;
-  --wp-ui--button-hover-color: #016087;
+  --wp-ui--button-hover-border-color: var(--wp-ui--color-primary-dark-5);
+  --wp-ui--button-hover-color: var(--wp-ui--color-primary-dark-5);
   --wp-ui--button-active-background: var(--wp-ui--button-background);
   --wp-ui--button-active-border-color: var(--wp-ui--color-primary);
   --wp-ui--button-active-box-shadow: none;
@@ -23,12 +23,20 @@
   --wp-ui--button-primary-color: white;
   --wp-ui--button-primary-text-decoration: none;
   --wp-ui--button-primary-text-shadow: none;
-  --wp-ui--button-primary-hover-background: #0071a1;
-  --wp-ui--button-primary-hover-border-color: #0071a1;
+  --wp-ui--button-primary-hover-background: var(
+		--wp-ui--color-primary-dark-5
+	);
+  --wp-ui--button-primary-hover-border-color: var(
+		--wp-ui--color-primary-dark-5
+	);
   --wp-ui--button-primary-hover-box-shadow: none;
   --wp-ui--button-primary-hover-color: white;
-  --wp-ui--button-primary-active-background: #00669b;
-  --wp-ui--button-primary-active-border-color: #00669b;
+  --wp-ui--button-primary-active-background: var(
+		--wp-ui--color-primary-dark-10
+	);
+  --wp-ui--button-primary-active-border-color: var(
+		--wp-ui--color-primary-dark-10
+	);
   --wp-ui--button-primary-active-box-shadow: none;
   --wp-ui--button-primary-focus-box-shadow: 0 0 0 1px white,
 		0 0 0 3px var(--wp-ui--color-primary);

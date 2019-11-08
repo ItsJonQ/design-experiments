@@ -1,6 +1,13 @@
 :root {
   --wp-ui--color-primary: #007cba;
-  --wp-ui--color-primary-light: #00a0d2;
+  --wp-ui--color-primary-5: #0d89c7;
+  --wp-ui--color-primary-10: #1a96d4;
+  --wp-ui--color-primary-20: #33afed;
+  --wp-ui--color-primary-dark-5: #006fad;
+  --wp-ui--color-primary-dark-10: #0063a1;
+  --wp-ui--color-primary-dark-20: #004987;
+  --wp-ui--color-primary-light: var(--wp-ui--color-primary-20);
+  --wp-ui--color-primary-dark: var(--wp-ui--color-primary-dark-20);
   --wp-ui--color-heading: #23282d;
   --wp-ui--color-text: #32373c;
   --wp-ui--color-text-muted: #555d66;
@@ -65,8 +72,8 @@ html body.wp-admin #wpfooter {
   --wp-ui--button-font-weight: normal;
   --wp-ui--button-min-height: var(--wp-ui--field-min-height);
   --wp-ui--button-hover-background: #f1f1f1;
-  --wp-ui--button-hover-border-color: #016087;
-  --wp-ui--button-hover-color: #016087;
+  --wp-ui--button-hover-border-color: var(--wp-ui--color-primary-dark-5);
+  --wp-ui--button-hover-color: var(--wp-ui--color-primary-dark-5);
   --wp-ui--button-active-background: var(--wp-ui--button-background);
   --wp-ui--button-active-border-color: var(--wp-ui--color-primary);
   --wp-ui--button-active-box-shadow: none;
@@ -81,12 +88,20 @@ html body.wp-admin #wpfooter {
   --wp-ui--button-primary-color: white;
   --wp-ui--button-primary-text-decoration: none;
   --wp-ui--button-primary-text-shadow: none;
-  --wp-ui--button-primary-hover-background: #0071a1;
-  --wp-ui--button-primary-hover-border-color: #0071a1;
+  --wp-ui--button-primary-hover-background: var(
+		--wp-ui--color-primary-dark-5
+	);
+  --wp-ui--button-primary-hover-border-color: var(
+		--wp-ui--color-primary-dark-5
+	);
   --wp-ui--button-primary-hover-box-shadow: none;
   --wp-ui--button-primary-hover-color: white;
-  --wp-ui--button-primary-active-background: #00669b;
-  --wp-ui--button-primary-active-border-color: #00669b;
+  --wp-ui--button-primary-active-background: var(
+		--wp-ui--color-primary-dark-10
+	);
+  --wp-ui--button-primary-active-border-color: var(
+		--wp-ui--color-primary-dark-10
+	);
   --wp-ui--button-primary-active-box-shadow: none;
   --wp-ui--button-primary-focus-box-shadow: 0 0 0 1px white,
 		0 0 0 3px var(--wp-ui--color-primary);
@@ -192,6 +207,36 @@ html body.wp-admin .button-link:focus {
   color: var(--wp-ui--button-link-focus-color);
 }
 
+html body.wp-admin #screen-meta,
+html body.wp-admin #activity-widget #the-comment-list .comment-item,
+html body.wp-admin .community-events li {
+  background: var(--wp-ui--panel-background);
+  color: var(--wp-ui--color-text);
+}
+
+html body.wp-admin #dashboard_activity .subsubsub,
+html body.wp-admin .community-events li:first-child,
+html body.wp-admin .community-events li ~ li {
+  border-top: var(--wp-ui--panel-border);
+}
+
+html body.wp-admin .postbox .hndle,
+html body.wp-admin .stuffbox .hndle {
+  border-bottom: var(--wp-ui--panel-border);
+}
+
+html body.wp-admin .activity-block {
+  border-bottom: var(--wp-ui--panel-border);
+}
+
+html body.wp-admin .activity-block:last-child {
+  border-bottom: none;
+}
+
+html body.wp-admin .community-events-footer {
+  border-top: var(--wp-ui--panel-border);
+}
+
 :root {
   --wp-ui--icon-color: #606a73;
 }
@@ -265,34 +310,9 @@ html body.wp-admin .welcome-panel {
   box-shadow: var(--wp-ui--panel-box-shadow);
 }
 
-html body.wp-admin #screen-meta,
-html body.wp-admin #activity-widget #the-comment-list .comment-item,
-html body.wp-admin .community-events li {
-  background: var(--wp-ui--panel-background);
-  color: var(--wp-ui--color-text);
-}
-
-html body.wp-admin #dashboard_activity .subsubsub,
-html body.wp-admin .community-events li:first-child,
-html body.wp-admin .community-events li ~ li {
-  border-top: var(--wp-ui--panel-border);
-}
-
 html body.wp-admin .postbox .hndle,
 html body.wp-admin .stuffbox .hndle {
   border-bottom: var(--wp-ui--panel-border);
-}
-
-html body.wp-admin .activity-block {
-  border-bottom: var(--wp-ui--panel-border);
-}
-
-html body.wp-admin .activity-block:last-child {
-  border-bottom: none;
-}
-
-html body.wp-admin .community-events-footer {
-  border-top: var(--wp-ui--panel-border);
 }
 
 :root {

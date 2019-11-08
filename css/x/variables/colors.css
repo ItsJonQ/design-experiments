@@ -1,6 +1,13 @@
 :root {
   --wp-ui--color-primary: #007cba;
-  --wp-ui--color-primary-light: #00a0d2;
+  --wp-ui--color-primary-5: #0d89c7;
+  --wp-ui--color-primary-10: #1a96d4;
+  --wp-ui--color-primary-20: #33afed;
+  --wp-ui--color-primary-dark-5: #006fad;
+  --wp-ui--color-primary-dark-10: #0063a1;
+  --wp-ui--color-primary-dark-20: #004987;
+  --wp-ui--color-primary-light: var(--wp-ui--color-primary-20);
+  --wp-ui--color-primary-dark: var(--wp-ui--color-primary-dark-20);
   --wp-ui--color-heading: #23282d;
   --wp-ui--color-text: #32373c;
   --wp-ui--color-text-muted: #555d66;
