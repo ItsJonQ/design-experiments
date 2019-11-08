@@ -1,0 +1,8 @@
+html body.wp-admin.block-editor-page {
+  background: var(--wp-ui--color-background-ui);
+}
+
+.edit-post-layout__content.edit-post-layout__scrollable-container {
+  --wp-ui--color-background-ui: white;
+  background: var(--wp-ui--color-background-ui);
+}

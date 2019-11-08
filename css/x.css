@@ -1,3 +1,8 @@
+/*
+Title: X
+Description: Experiment X. CSS Modularization + Variables.
+PR: https://github.com/itsjonq/design-experiments/
+*/
 :root {
   --wp-ui--color-primary: #007cba;
   --wp-ui--color-primary-5: #0d89c7;
@@ -330,4 +335,13 @@ html body.wp-admin select {
 
 html body.wp-admin select:hover {
   color: var(--wp-ui--select-hover-color);
+}
+
+html body.wp-admin.block-editor-page {
+  background: var(--wp-ui--color-background-ui);
+}
+
+.edit-post-layout__content.edit-post-layout__scrollable-container {
+  --wp-ui--color-background-ui: white;
+  background: var(--wp-ui--color-background-ui);
 }
