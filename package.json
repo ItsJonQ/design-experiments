@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "watch": "node-sass --watch sass -o css --output-style expanded",
